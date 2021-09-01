@@ -134,6 +134,7 @@ export default function CategoryView(props) {
                     <div style={{ margin: 20 }}>
                     <QtySpinner
                         value={0}
+
                       onChange={(value) => handleQtyChange(value,item)}
                     />
                     </div>
@@ -149,7 +150,9 @@ export default function CategoryView(props) {
   };
 
   useEffect(function () {
+
     fetchAllSubCategories();
+  
   }, []);
 
   return (
